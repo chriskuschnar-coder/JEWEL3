@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Global Markets" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#102a43" />
+    <meta name="application-name" content="GMC" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="msapplication-navbutton-color" content="#102a43" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- iOS Icons -->
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+    
+    <!-- Android Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+    
+    <!-- Windows Tiles -->
+    <meta name="msapplication-TileImage" content="/logo.png" />
+    <meta name="msapplication-TileColor" content="#102a43" />
+    
+    <title>Complete Hedge Fund Platform Setup</title>
+    <style>
+      /* Prevent zoom on input focus */
+      input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+        font-size: 16px !important;
+      }
+      
+      /* Mobile-specific optimizations */
+      @media (max-width: 480px) {
+        input, textarea, select {
+          font-size: 16px !important;
+          padding: 12px !important;
+        }
+        
+        button {
+          min-height: 44px !important;
+          font-size: 14px !important;
+        }
+      }
+      
+      /* Smooth scrolling for iOS */
+      * {
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      /* Hide scrollbars but keep functionality */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+      
+      /* Prevent text selection on mobile */
+      @media (max-width: 768px) {
+        * {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+        
+        input, textarea {
+          -webkit-user-select: text;
+          -moz-user-select: text;
+          -ms-user-select: text;
+          user-select: text;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

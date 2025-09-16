@@ -1,0 +1,2 @@
+[functions.send-2fa-code]
+verify_jwt = true

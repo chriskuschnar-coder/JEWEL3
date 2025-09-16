@@ -1,0 +1,2 @@
+[functions.send-email-code]
+verify_jwt = true

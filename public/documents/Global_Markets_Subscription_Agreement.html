@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Global Markets" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#102a43" />
+    <title>Global Markets Subscription Agreement</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background: #f8f9fa;
+      }
+      
+      .document-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+      }
+      
+      .header {
+        text-align: center;
+        margin-bottom: 40px;
+        border-bottom: 2px solid #102a43;
+        padding-bottom: 20px;
+      }
+      
+      .header h1 {
+        color: #102a43;
+        font-size: 24px;
+        margin: 0;
+        font-weight: bold;
+      }
+      
+      .header h2 {
+        color: #666;
+        font-size: 18px;
+        margin: 10px 0 0 0;
+        font-weight: normal;
+      }
+      
+      .section {
+        margin: 30px 0;
+        page-break-inside: avoid;
+      }
+      
+      .section h3 {
+        color: #102a43;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        border-left: 4px solid #d4af37;
+        padding-left: 15px;
+      }
+      
+      .section h4 {
+        color: #102a43;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 20px 0 10px 0;
+      }
+      
+      .checkbox-item {
+        margin: 8px 0;
+        padding: 5px 0;
+      }
+      
+      .signature-line {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        min-width: 300px;
+        margin: 0 10px;
+      }
+      
+      .date-line {
+        border-bottom: 1px solid #333;
+        display: inline-block;
+        min-width: 150px;
+        margin: 0 10px;
+      }
+      
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      
+      .table th,
+      .table td {
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: left;
+      }
+      
+      .table th {
+        background-color: #f5f5f5;
+        font-weight: bold;
+      }
+      
+      .footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        text-align: center;
+        color: #666;
+        font-size: 12px;
+      }
+      
+      @media print {
+        body { background: white; }
+        .document-container { box-shadow: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="document-container">
+      <div class="header">
+        <h1>SUBSCRIPTION AGREEMENT</h1>
+        <h2>Global Markets, LP</h2>
+        <p><strong>A Delaware Limited Partnership</strong></p>
+      </div>
+
+      <div class="section">
+        <h3>SUBSCRIPTION FOR LIMITED PARTNERSHIP INTERESTS</h3>
+        <p>The undersigned (the "Subscriber") hereby subscribes for Limited Partnership Interests in Global Markets, LP, a Delaware limited partnership (the "Partnership"), subject to the terms and conditions set forth in this Subscription Agreement and the Partnership's Limited Partnership Agreement.</p>
+      </div>
+
+      <div class="section">
+        <h3>EXHIBIT A - INVESTOR QUESTIONNAIRE</h3>
+        
+        <h4>ACCREDITED INVESTOR STATUS</h4>
+        <p>Please check all applicable categories that qualify you as an "accredited investor" under Rule 501 of Regulation D:</p>
+        
+        <div class="checkbox-item">☐ Individual with income exceeding $200,000 in each of the two most recent years</div>
+        <div class="checkbox-item">☐ Individual with joint income exceeding $300,000 in each of the two most recent years</div>
+        <div class="checkbox-item">☐ Individual with net worth exceeding $1,000,000 (excluding primary residence)</div>
+        <div class="checkbox-item">☐ Entity with assets exceeding $5,000,000</div>
+        <div class="checkbox-item">☐ Bank, insurance company, or registered investment company</div>
+        <div class="checkbox-item">☐ Employee benefit plan with assets exceeding $5,000,000</div>
+        <div class="checkbox-item">☐ Trust with assets exceeding $5,000,000 and sophisticated trustee</div>
+        <div class="checkbox-item">☐ Entity owned entirely by accredited investors</div>
+        
+        <h4>QUALIFIED PURCHASER STATUS</h4>
+        <p>Please check all applicable categories that qualify you as a "qualified purchaser" under Section 2(a)(51) of the Investment Company Act:</p>
+        
+        <div class="checkbox-item">☐ Individual or family company with at least $5,000,000 in investments</div>
+        <div class="checkbox-item">☐ Trust with at least $5,000,000 in investments and trustee is qualified purchaser</div>
+        <div class="checkbox-item">☐ Entity with at least $25,000,000 in investments</div>
+        <div class="checkbox-item">☐ Qualified institutional buyer under Rule 144A</div>
+        <div class="checkbox-item">☐ Knowledgeable employee of investment adviser</div>
+        
+        <p style="margin-top: 30px;">
+          <strong>Exhibit A Signature:</strong><br>
+          By signing below, I certify that the information provided above is true and accurate.<br><br>
+          Signature: <span class="signature-line">[[EXHIBIT_A_SIGNATURE]]</span> Date: <span class="date-line"></span>
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>EXHIBIT B - BENEFICIAL OWNERSHIP FORM</h3>
+        <p>Please provide information for all individuals who own 25% or more of the subscribing entity:</p>
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Ownership %</th>
+              <th>Control/Role</th>
+              <th>Country</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+            </tr>
+            <tr>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+            </tr>
+            <tr>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+              <td style="height: 40px;"></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="checkbox-item">☐ No individual owns 25% or more of this entity (explain below)</div>
+        <p>Explanation: ________________________________________________</p>
+        
+        <p style="margin-top: 30px;">
+          <strong>Exhibit B Signature:</strong><br>
+          I certify that the beneficial ownership information provided above is true and accurate.<br><br>
+          Signature: <span class="signature-line">[[EXHIBIT_B_SIGNATURE]]</span> Date: <span class="date-line"></span>
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>EXHIBIT C - U.S. TAX FORMS</h3>
+        <p>The Subscriber acknowledges and agrees to provide the applicable tax documentation:</p>
+        
+        <div class="checkbox-item">☐ [[EXHIBIT_C_ACK]] I will provide the applicable IRS W-9 or W-8 form via the secure portal.</div>
+        
+        <p><strong>Note:</strong> U.S. persons must provide Form W-9. Non-U.S. persons must provide the appropriate Form W-8 (W-8BEN, W-8BEN-E, W-8ECI, or W-8IMY as applicable).</p>
+      </div>
+
+      <div class="section">
+        <h3>EXHIBIT D - AML/KYC CERTIFICATION</h3>
+        <p>The Subscriber hereby certifies and represents that:</p>
+        
+        <ul>
+          <li>I am in compliance with all applicable anti-money laundering (AML) laws and regulations</li>
+          <li>I acknowledge that additional know-your-customer (KYC) verification may be required</li>
+          <li>I understand that the Partnership reserves the right to reject this subscription if AML/KYC requirements are not satisfied</li>
+          <li>I will promptly provide any additional documentation requested for compliance purposes</li>
+        </ul>
+        
+        <p style="margin-top: 30px;">
+          <strong>Exhibit D Signature:</strong><br>
+          By signing below, I certify compliance with all AML/KYC requirements.<br><br>
+          Signature: <span class="signature-line">[[EXHIBIT_D_SIGNATURE]]</span> Date: <span class="date-line"></span>
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>SUBSCRIPTION DETAILS</h3>
+        <p>Investment Amount: $________________</p>
+        <p>Number of Units: ________________</p>
+        <p>Subscription Date: ________________</p>
+      </div>
+
+      <div class="section">
+        <h3>SUBSCRIBER ACKNOWLEDGMENT</h3>
+        <p>By executing this Subscription Agreement, the Subscriber acknowledges that:</p>
+        <ul>
+          <li>They have received and reviewed the Partnership's Private Placement Memorandum</li>
+          <li>They understand the risks associated with this investment</li>
+          <li>They meet the suitability requirements for this investment</li>
+          <li>This investment is suitable for their financial situation and investment objectives</li>
+        </ul>
+        
+        <p style="margin-top: 40px;">
+          <strong>Subscriber Signature:</strong><br><br>
+          Signature: <span class="signature-line"></span> Date: <span class="date-line"></span><br><br>
+          Print Name: <span class="signature-line"></span><br><br>
+          Title (if entity): <span class="signature-line"></span>
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>Global Markets, LP - Subscription Agreement</p>
+        <p>This document contains confidential and proprietary information</p>
+      </div>
+    </div>
+  </body>
+</html>

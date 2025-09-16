@@ -1,0 +1,34 @@
+# Ignore local drafts, temp files, build caches
+*.bak
+*.tmp
+*.log
+node_modules/
+drafts/
+designs/
+screenshots/
+test-data/
+**/*.psd
+**/*.ai
+**/*.sketch
+**/*.docx
+**/*.jpeg
+**/*.jpg
+**/*.png
+
+# Ignore old document versions (but keep current live ones)
+public/documents/old_*
+public/documents/test_*
+
+# Keep all current PDF documents for investors
+!public/documents/*.pdf
+public/documents/**/
+public/documents/*.jpeg
+public/documents/*.jpg
+public/documents/*.png
+
+# Keep only the 5 essential investor documents:
+# - Global_Markets_PPM_Final_85pp_TOC.pdf
+# - GLOBAL MARKETS, LP.pdf  
+# - Global_Markets_Subscription_Agreement.pdf
+# - Investor_Questionnaire.pdf
+# - Risk_Disclosure_Statement.pdf

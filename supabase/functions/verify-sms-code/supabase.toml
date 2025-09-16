@@ -1,0 +1,2 @@
+[functions.verify-sms-code]
+verify_jwt = true
