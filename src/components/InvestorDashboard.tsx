@@ -68,6 +68,7 @@ export default function InvestorDashboard({ onShowKYCProgress }: InvestorDashboa
           hasCompletedDocuments={hasCompletedDocuments}
           onCheckKYC={onShowKYCProgress}
           onResubmitKYC={onShowKYCProgress}
+          onStartOnboarding={() => handleFundPortfolio()}
         />
       )}
 

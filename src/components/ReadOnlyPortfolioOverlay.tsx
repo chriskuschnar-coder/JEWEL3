@@ -1,14 +1,15 @@
 import React from 'react'
-import { Lock, Shield, Clock, AlertTriangle, ArrowRight } from 'lucide-react'
+import { Lock, Shield, Clock, AlertTriangle, ArrowRight, FileText } from 'lucide-react'
 
 interface ReadOnlyPortfolioOverlayProps {
   kycStatus: string
   hasCompletedDocuments?: boolean
   onCheckKYC?: () => void
   onResubmitKYC?: () => void
+  onStartOnboarding?: () => void
 }
 
-export function ReadOnlyPortfolioOverlay({ kycStatus, hasCompletedDocuments = false, onCheckKYC, onResubmitKYC }: ReadOnlyPortfolioOverlayProps) {
+export function ReadOnlyPortfolioOverlay({ kycStatus, hasCompletedDocuments = false, onCheckKYC, onResubmitKYC, onStartOnboarding }: ReadOnlyPortfolioOverlayProps) {
   const getStatusMessage = () => {
     // If documents not completed, don't show KYC-related messages
     if (!hasCompletedDocuments) {
@@ -17,7 +18,16 @@ export function ReadOnlyPortfolioOverlay({ kycStatus, hasCompletedDocuments = fa
         title: 'Complete Account Setup',
         message: 'Complete your onboarding documents first, then proceed with identity verification to unlock funding features.',
         color: 'gray',
-        action: null
+        action: onStartOnboarding ? (
+          <button
+            onClick={onStartOnboarding}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 inline-flex items-center gap-3 hover:scale-105 shadow-lg"
+          >
+            <FileText className="h-5 w-5" />
+            Complete Onboarding Documents
+            <ArrowRight className="h-4 w-4" />
+          </button>
+        ) : null
       }
     }
     
